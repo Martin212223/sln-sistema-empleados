@@ -1,13 +1,13 @@
 ﻿@model SistemaWebEmpleado.Models.Empleado
 
-<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Detalle Empleado";
+}
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Detalle</title>
-</head>
-<body>
+@section SideBar{
+    <h2>Administración de empleados</h2>
+    
+}
 
     <h2>Ver Detalle</h2>
     @Html.ActionLink("Volver a index", "Index", "Empleado")
@@ -42,5 +42,3 @@
         @Html.DisplayFor(model => model.Titulo)
     </p>
 
-</body>
-</html>

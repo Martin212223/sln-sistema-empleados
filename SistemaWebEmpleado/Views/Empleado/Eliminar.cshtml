@@ -1,13 +1,13 @@
 ﻿@model SistemaWebEmpleado.Models.Empleado
 
-<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Eliminar Empleado";
+}
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Eliminar</title>
-</head>
-<body>
+@section SideBar{
+    <h2>Administración de empleados</h2>
+
+}
 
     <h2>Empleado: @Model.Nombre @Model.Apellido Legajo: @Model.Legajo</h2>
     <p>¿Desea eliminar este empleado?</p>
@@ -50,5 +50,3 @@
 
     }
 
-</body>
-</html>

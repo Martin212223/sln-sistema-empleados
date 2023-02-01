@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/main.css" rel="stylesheet" type="text/css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <header>
+        <h1>SISTEMA Empleado</h1>
+    </header>
+
+    <div id="sidebar">
+        @if (IsSectionDefined("SideBar"))
+        {
+            @RenderSection("SideBar")
+        }
+        else
+        {
+            <h2>Error al cargar el Side</h2>
+        }
+    </div>
+
+    <nav>
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Empleado", "Index", "Empleado")
+    </nav>
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <footer>
+        Info@Empleado.com
+    </footer>
+
+</body>
+</html>

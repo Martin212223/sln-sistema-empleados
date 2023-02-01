@@ -1,18 +1,17 @@
-﻿
+﻿@{
+    ViewData["Title"] = "Index Home";
+}
 
-<!DOCTYPE html>
+@section SideBar{
+    <div class="sidebar-home">
+        <h2>Bienvenido al Sistema de Administración de Empleado</h2>
+        <img src="https://images.emojiterra.com/openmoji/v13.1/512px/1f60a.png" alt="empleado sonriente" />
+    </div>
+    
+}
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
+<h2>@ViewBag.Nombre</h2>
+<h3>@ViewBag.Fecha</h3>
 
-    <h2>@ViewBag.Nombre</h2>
-    <h3>@ViewBag.Fecha</h3>
+@Html.ActionLink("Ir a empleados", "Index", "Empleado")
 
-    @Html.ActionLink("Ir a empleados", "Index", "Empleado")
-
-</body>
-</html>

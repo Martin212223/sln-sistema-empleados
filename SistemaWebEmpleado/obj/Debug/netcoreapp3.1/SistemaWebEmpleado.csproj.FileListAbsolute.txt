@@ -150,3 +150,5 @@ C:\Users\Alternativa\Desktop\Último curso\15 - tp individual empleados 31-1\sln
 C:\Users\Alternativa\Desktop\Último curso\15 - tp individual empleados 31-1\slnSistEmpleado\SistemaWebEmpleado\obj\Debug\netcoreapp3.1\Razor\Views\Empleado\Eliminar.cshtml.g.cs
 C:\Users\Alternativa\Desktop\Último curso\15 - tp individual empleados 31-1\slnSistEmpleado\SistemaWebEmpleado\obj\Debug\netcoreapp3.1\Razor\Views\Empleado\Detalle.cshtml.g.cs
 C:\Users\Alternativa\Desktop\Último curso\15 - tp individual empleados 31-1\slnSistEmpleado\SistemaWebEmpleado\obj\Debug\netcoreapp3.1\Razor\Views\Empleado\Insertar.cshtml.g.cs
+C:\Users\Alternativa\Desktop\Último curso\15 - tp individual empleados 31-1\slnSistEmpleado\SistemaWebEmpleado\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Alternativa\Desktop\Último curso\15 - tp individual empleados 31-1\slnSistEmpleado\SistemaWebEmpleado\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
