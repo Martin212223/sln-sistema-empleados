@@ -9,9 +9,12 @@ namespace SistemaWebEmpleado.Validations
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             
-            DateTime fecha = Convert.ToDateTime(value);
+            if (Convert.ToDateTime(value) < new DateTime(2000, 01, 01))
+            {
+                return new ValidationResult("La fecha de nacimiento solo puede ser posterior al 01/01/2000.");
+            }
 
-            if (fecha < new DateTime())
+            return ValidationResult.Success;
 
         }
 

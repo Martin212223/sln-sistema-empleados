@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaWebEmpleado.Validations;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -24,10 +25,11 @@ namespace SistemaWebEmpleado.Models
 
         [Column(TypeName = "varchar(50)")]
         [Required]
-        [RegularExpression("[A]{2}[1-9]{5}$")]
+        [RegularExpression("[A]{1}[1-9]{5}$")]
         //[RegularExpression("@([A]{2})+([1-9]{5})")]
         public string Legajo { get; set; }
 
+        [AfterYear2000]
         public DateTime FechaNacimiento { get; set; }
 
         [Column(TypeName = "varchar(50)")]
