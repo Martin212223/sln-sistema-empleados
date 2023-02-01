@@ -26,7 +26,6 @@ namespace SistemaWebEmpleado.Models
         [Column(TypeName = "varchar(50)")]
         [Required]
         [RegularExpression("[A]{1}[1-9]{5}$")]
-        //[RegularExpression("@([A]{2})+([1-9]{5})")]
         public string Legajo { get; set; }
 
         [AfterYear2000]

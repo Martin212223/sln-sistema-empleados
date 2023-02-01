@@ -42,16 +42,16 @@ namespace SistemaWebEmpleado.Controllers
 
         //CREATE GET
         [HttpGet]
-        public ActionResult Create()
+        public ActionResult Insertar()
         {
             Empleado empleado = new Empleado();
 
-            return View("Create");
+            return View("Insertar");
         }
 
         //CREATE POST
         [HttpPost]
-        public ActionResult Create(Empleado empleado)
+        public ActionResult Insertar(Empleado empleado)
         {
             if (ModelState.IsValid)
             {
@@ -62,7 +62,7 @@ namespace SistemaWebEmpleado.Controllers
                 return RedirectToAction("Index");
             }
 
-            return View("Create", empleado);
+            return View("Insertar", empleado);
         }
 
         //POR TITULO GET

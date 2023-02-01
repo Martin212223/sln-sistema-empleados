@@ -5,13 +5,13 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
+    <title>Insertar</title>
 </head>
 <body>
 
     <h1>Agregar empleado</h1>
 
-    @using (Html.BeginForm("Create", "Empleado", FormMethod.Post))
+    @using (Html.BeginForm("Insertar", "Empleado", FormMethod.Post))
     {
         <p>
             @Html.LabelFor(model => model.Nombre)
@@ -49,7 +49,7 @@
             @Html.ValidationMessageFor(model => model.Titulo)
         </p>
 
-        <input type="submit" action="Create" />
+        <input type="submit" action="Insertar" />
 
         @Html.ActionLink("Volver a ver empleados", "Index", "Empleado")
 
